@@ -1,6 +1,6 @@
 // Khet Khata service worker — keeps the app working with no internet.
 // The cache name below gets a unique build id at build time (see vite.config.ts).
-const CACHE = 'khet-khata-mw1rfpqx'
+const CACHE = 'khet-khata-mw1tbzrr'
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-64.png']
 
 self.addEventListener('install', (event) => {
