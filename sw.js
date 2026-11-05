@@ -1,6 +1,6 @@
 // Indian Farm Management service worker — keeps the app working with no internet.
 // The cache name below gets a unique build id at build time (see vite.config.ts).
-const CACHE = 'khet-khata-mw2iuw4k'
+const CACHE = 'khet-khata-mw355de1'
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-64.png', './brand/logo-full.webp']
 
 self.addEventListener('install', (event) => {
