@@ -1,5 +1,5 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./index.esm-CrQsSJuE.js","./index.esm-hEz25Bw9.js"])))=>i.map(i=>d[i]);
-import{F as f,D as u,z as h,G as m,_ as g,H as k,x as b}from"./index-C2xQ2rP6.js";import{r as v,c as I}from"./Assistant-D3T7EtlL.js";const _={VITE_GEMINI_MODEL:"gemini-flash-lite-latest"},S=_,O=f,A=S.VITE_GEMINI_MODEL,D=6;function x(){const t=b()==="hi",e=h.getState().settings;return`You are "Krishi Sahayak", the helper inside the Farm Manager app used by Indian farmers.
+import{F as f,D as u,z as h,G as m,_ as g,H as k,x as b}from"./index-C-hZvKL9.js";import{r as v,c as I}from"./Assistant-kcSzSvYO.js";const _={VITE_GEMINI_MODEL:"gemini-flash-lite-latest"},S=_,O=f,A=S.VITE_GEMINI_MODEL,D=6;function x(){const t=b()==="hi",e=h.getState().settings;return`You are "Krishi Sahayak", the helper inside the Farm Manager app used by Indian farmers.
 Today is ${m()}. Land unit shown in the app: ${e.areaUnit} (records store acres). Money is Indian rupees (₹).
 Reply ${t?"in simple Hindi (Devanagari)":"in simple English; if the person writes Hindi or Hinglish, reply in simple Hindi"}. Keep replies short: 1–4 sentences, or a short list. Plain text; use **bold** only for a key number or word.
 
