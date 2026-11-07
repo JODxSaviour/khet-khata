@@ -1,6 +1,6 @@
 // Indian Farm Management service worker — keeps the app working with no internet.
 // The cache name below gets a unique build id at build time (see vite.config.ts).
-const CACHE = 'khet-khata-mw5ckk9t'
+const CACHE = 'khet-khata-mw5yzpgo'
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-64.png', './brand/logo-full.webp']
 
 self.addEventListener('install', (event) => {
@@ -33,12 +33,16 @@ self.addEventListener('fetch', (event) => {
 
   // pages: try the network for the latest version, fall back to the saved copy offline
   if (req.mode === 'navigate') {
+    // only the app itself (hash routes keep the path); other pages such as /download/ are left alone so
+    // they never replace the saved app page
+    const path = new URL(req.url).pathname
+    const scope = new URL(self.registration.scope).pathname
+    if (path !== scope && path !== scope + 'index.html') return
     event.respondWith(
       (async () => {
         try {
           const res = await fetch(req)
-          const cache = await caches.open(CACHE)
-          cache.put('./index.html', res.clone())
+          if (res.ok && res.type === 'basic') (await caches.open(CACHE)).put('./index.html', res.clone())
           return res
         } catch {
           return (await caches.match('./index.html')) || Response.error()
