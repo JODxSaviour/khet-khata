@@ -1,1 +1,0 @@
-import{v as e,x as a,a2 as n,ad as s}from"./index-DLsgra5f.js";function i(){return e.jsxs(e.Fragment,{children:[e.jsx(a,{...n("bin"),title:"Recycle bin",hi:"हटाए गए",sub:"Check deleted entries and bring them back"}),e.jsx(s,{})]})}export{i as default};
