@@ -1,0 +1,1 @@
+import{T as e,V as a,aj as n,ax as s}from"./index-CDQggty8.js";function i(){return e.jsxs(e.Fragment,{children:[e.jsx(a,{...n("bin"),title:"Recycle bin",hi:"हटाए गए",sub:"Check deleted entries and bring them back"}),e.jsx(s,{})]})}export{i as default};
